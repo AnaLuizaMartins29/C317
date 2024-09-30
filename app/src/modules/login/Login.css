@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Jaldi", sans-serif;
+}
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.login-logo {
+    position: absolute;      /* Permite que a logo se posicione livremente na tela */
+    top: 0;                  /* Alinha a logo ao topo da tela */
+    left: 0;                 /* Alinha a logo à esquerda da tela */
+    width: 100%;             /* O logo ocupa 100% da largura do container */
+    height: 100%;            /* O logo ocupa 100% da altura do container */
+    background-color: #64C7FF; /* Cor de fundo azul */
+    display: flex;           /* Usa flexbox para layout */
+    flex-direction: column;  /* Alinha os itens em coluna */
+    align-items: center;     /* Centraliza os itens horizontalmente */
+    justify-content: center;  /* Centraliza os itens verticalmente */
+    gap: 10%;                /* Espaçamento entre os itens */
+    z-index: -1;            /* Coloca a logo atrás dos outros elementos */
+}
+
+.login-logo img {
+    width: 150%;             /* A imagem ocupa 100% da largura do logo */
+    height: 150%;            /* A altura é ajustada automaticamente */
+     opacity: 0.5;          /* Ajuste a opacidade aqui (0.8 = 80% visível) */
+    
+}
+
+.login-logo h1 {
+    width: 100%;             /* O título ocupa 100% da largura do logo */
+    font-size: 2rem;         /* Ajuste do tamanho da fonte para ser mais responsivo */
+    text-align: center;
+    margin: 0;
+    color: white;            /* Cor do texto da logo */
+}
+
+.login-form {
+    /* position: absolute;      /* Faz o formulário flutuar sobre a logo 
+    top: 50%;                /* Posiciona o formulário no meio da tela verticalmente 
+    left: 50%;               /* Posiciona o formulário no meio da tela horizontalmente 
+    transform: translate(-50%, -50%); /* Centraliza o formulário */
+    height: 100%; 
+    width: 100%;              /* O form ocupa 80% da largura do container */
+   /* background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;          /* Espaçamento interno do formulário */
+    border-radius: 10px;    /* Bordas arredondadas */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar o formulário */
+    z-index: 1;             /* Coloca o formulário acima da logo */
+}
+
+.login-form h1 {  /* Capitalis */
+    width: 100%;
+    color: white;        /* Cor do texto do formulário */
+    text-align: center;
+    font-size: 2.5rem;      /* Ajuste do tamanho da fonte */
+    text-shadow: 0 4px 4px #7d7d7d; 
+
+}
+
+
+.login-credentials { /* caixa de texto de email e senha*/
+    height: auto;           /* Altura automática para caber o conteúdo */
+    width: 80%;             /* Largura da seção de credenciais */
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.login-submit {
+    width: 80%;             /* A largura do botão de submissão */
+    height: auto;           /* Definição de uma altura fixa para o botão */
+    margin-top: 20px;       /* Adicione um valor conforme necessário */
+}
